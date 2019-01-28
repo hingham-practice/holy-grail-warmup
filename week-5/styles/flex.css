@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+header,footer{
+    height: 150px;
+}
+
+main{
+    display: flex;
+    flex: 1;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+section nav{
+    order: 1;
+    height: 50px;
+}
+
+section article{
+    order: 4;    
+    flex: 1;
+}
+
+section aside{
+    order: 3;
+    height: 50px;
+}
+
+
+@media screen and (min-width: 750px){
+    main section{
+        flex-direction: row;
+    }
+
+    section nav{
+        order: 1;
+        height: auto;
+        width: 100px;
+    }
+
+    section aside{
+        order: 3;
+        height: auto;
+        width: 100px;
+
+    }
+
+    section article{
+        order: 2;
+        flex: 1;
+    }
+}
+
