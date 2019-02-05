@@ -1,0 +1,28 @@
+main{
+    display: grid;
+    height: calc(100% - 140px);
+}
+
+main section{
+    display: grid;
+    grid-template-rows: 100px 100px 1fr;
+}
+
+main > nav{
+    grid-row: 0/1;
+}
+
+main > article{
+    grid-row: 2/3;
+}
+
+main > aside{
+    grid-row: 1/2;
+}
+
+
+@media screen and (min-width: 750px){
+    main section{
+        grid-template-columns: 150px 1fr 150px;
+    }
+}
